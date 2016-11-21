@@ -16,13 +16,16 @@ using std::string;
 
 class Substructure {
 
-	int x, y, numSolutions;
+	int x, y;
 	Substructure *parent, *sibling;
 	Pair *pair;
 
 public:
+
+	int numSolutions;
+
 	Substructure(int ix, int iy)
-			: x(ix), y(iy), numSolutions(-1), parent(0), sibling(0), pair(0) {}
+			: x(ix), y(iy), parent(0), sibling(0), pair(0), numSolutions(-1) {}
 
 	int countSolutions()
 	{

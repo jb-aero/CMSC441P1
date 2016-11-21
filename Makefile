@@ -19,6 +19,9 @@ slVector.o: slVector.cpp slVector.H slIO.H
 run:
 	./fold test100.txt
 
+ten:
+	./fold test10.txt
+
 fifty:
 	./fold test100.txt 50
 
